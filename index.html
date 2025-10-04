@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Al‑Maraghi Real Estate — Mansoor Landing</title>
+  <meta name="description" content="Boutique, client-first guidance for Dubai property. Buy • Sell • Invest." />
+  <style>
+    :root{--max-width:1100px;--accent:#0b2447;--muted:#6b7280}
+    body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:#111;margin:0;line-height:1.4}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:48px}
+    nav a{margin-left:18px;color:var(--accent);text-decoration:none;font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;margin:18px 0}
+    .hero .hero-media{flex:1}
+    .hero img{width:100%;height:auto;border-radius:10px;display:block}
+    .hero .hero-copy{flex:1;min-width:280px}
+    .kicker{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+    h1{margin:8px 0;font-size:28px;color:var(--accent)}
+    p.lead{margin:12px 0;color:#333}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+    .listings{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:28px 0}
+    .card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(11,36,71,0.08)}
+    .card img{display:block;width:100%;height:auto}
+    .card .meta{padding:12px}
+    .card h3{margin:0 0 6px;font-size:16px;color:var(--accent)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .aside{background:#f8fafc;padding:18px;border-radius:10px;margin-top:18px}
+    .form-embed{width:100%;min-height:420px;border:0;border-radius:8px}
+    footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid #eef2f7;margin-top:36px}
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid-2{grid-template-columns:1fr}.hero{flex-direction:column}.logo img{height:42px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="Al‑Maraghi Real Estate logo" />
+        <div>
+          <div style="font-weight:800;color:var(--accent)">AL‑MARAGHI</div>
+          <div style="font-size:12px;color:var(--muted);letter-spacing:0.6px">REAL ESTATE</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#properties">Properties</a>
+        <a href="#vip">VIP Access</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-media">
+          <img src="/assets/hero.jpg" alt="Zayd Al‑Maraghi on a rooftop at golden hour with Dubai skyline" />
+        </div>
+        <div class="hero-copy">
+          <div class="kicker">BUY • SELL • INVEST</div>
+          <h1>Boutique, client-first guidance for Dubai's best in property</h1>
+          <p class="lead">Led by Zayd Al‑Maraghi — personalized market insight, VIP access to off‑market listings, and hands-on negotiation for buyers and sellers across Dubai.</p>
+          <div class="cta">
+            <a class="btn" href="#vip">Request VIP Access</a>
+            <a class="btn secondary" href="https://calendly.com/yourname/15min" target="_blank" rel="noopener">Book 15‑min Call</a>
+          </div>
+          <div style="margin-top:10px;color:var(--muted);font-size:13px">
+            <strong>Location:</strong> Deira, Dubai · <strong>Email:</strong> hello@al-maraghi.com · <strong>Phone:</strong> +971 50 000 0000
+          </div>
+        </div>
+      </section>
+
+      <section id="properties">
+        <h2 style="color:var(--accent);margin-top:6px">Featured Listings</h2>
+        <div class="listings" role="list">
+          <article class="card" role="listitem">
+            <img src="/assets/listing1.jpg" alt="Palm Jumeirah villa exterior with pool at golden hour" />
+            <div class="meta">
+              <h3>Palm Jumeirah Villa</h3>
+              <p>4 bed · 5 bath · Private pool · Price on request</p>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="/assets/listing2.jpg" alt="Downtown Dubai penthouse living room with skyline view at sunset" />
+            <div class="meta">
+              <h3>Downtown Penthouse</h3>
+              <p>3 bed · 3 bath · Skyline views · Concierge building</p>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="/assets/listing3.jpg" alt="Bright Business Bay family apartment living area" />
+            <div class="meta">
+              <h3>Business Bay Family Apartment</h3>
+              <p>2 bed · 2 bath · Canal view · Furnished optional</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section id="vip" class="aside">
+          <h3 style="margin-top:0;color:var(--accent)">VIP Access</h3>
+          <p style="color:#333">Apply for off‑market previews, priority showings, and tailored property matches. Submit the short form below and our team will follow up within 24 hours.</p>
+
+          <!-- Google Form embed: replace src with your Google Form iframe src -->
+          <iframe class="form-embed" src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" title="VIP Access Form"></iframe>
+
+          <p style="font-size:13px;color:var(--muted);margin-top:8px"><strong>Prefer a quick chat?</strong> Book a 15‑minute consult: <a href="https://calendly.com/yourname/15min" target="_blank" rel="noopener">Calendly — 15 min</a></p>
+        </section>
+
+        <aside class="aside">
+          <h3 style="margin-top:0;color:var(--accent)">Contact & Office</h3>
+          <p style="margin:6px 0"><strong>Email</strong><br/>hello@al-maraghi.com</p>
+          <p style="margin:6px 0"><strong>Phone</strong><br/>+971 50 000 0000</p>
+          <p style="margin:6px 0"><strong>Office</strong><br/>Deira, Dubai, UAE</p>
+
+          <h4 style="margin-top:12px;color:var(--accent)">Quick Links</h4>
+          <p style="margin:6px 0"><a href="#properties">View listings</a><br/><a href="#vip">VIP Access form</a></p>
+
+          <div style="margin-top:14px;font-size:13px;color:var(--muted)">
+            <strong>Note:</strong> Hero and listing images may be AI-assisted or staged for marketing purposes.
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© <strong>Al‑Maraghi Real Estate</strong> · Deira, Dubai</div>
+        <div style="color:var(--muted)">Designed for fast leads · Built with Vercel</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
